@@ -1,0 +1,1 @@
+Build a library management system that allows users to add, edit, and delete books, and keep track of borrowed and returned books. You can create classes for books, users, and transactions, and use methods to handle various tasks.
