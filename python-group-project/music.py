@@ -1,4 +1,5 @@
 import sys
+import os
 import playsound
 # playsound is library to play a sound independent of platform
 # playsound.playsound('path_to_music')
@@ -28,12 +29,13 @@ class User:
 class App:
     # Main application class
     def __init__(self):
-        self.users=[] # list of instances of user class
-        self.musics=[] # list of instances of Music
+        self.users=[] # list of instances of User class
+        self.musics=[] # list of instances of Music class
         self.current_user=None
-        self.db_path='/home/aman/python/python-group-project/music.csv' # Hardcoded path
+        self.project_dir=os.getcwd()
     #def load_database()
     #def add_user(self)
     #def add_fav_song(self,user,song)
     #def add_fav_singer(self,user,)
 print("hello, world\n")
+print("The project folder is", os.getcwd())
