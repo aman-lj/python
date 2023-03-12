@@ -32,7 +32,7 @@ class App:
         self.users=[] # list of instances of User class
         self.musics=[] # list of instances of Music class
         self.current_user=None
-        self.project_dir=os.getcwd()
+        self.project_dir=__file__
     #def load_database()
     #def add_user(self)
     #def add_fav_song(self,user,song)
