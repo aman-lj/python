@@ -1,5 +1,6 @@
 import sys
 import os
+import json
 import playsound
 # playsound is library to play a sound independent of platform
 # playsound.playsound('path_to_music')
@@ -32,10 +33,16 @@ class App:
         self.users=[] # list of instances of User class
         self.musics=[] # list of instances of Music class
         self.current_user=None
-        self.project_dir=__file__
+        self.project_dir=os.path.dirname(__file__)
+        self.load_data()
+        print("app created succesfully")
+    def load_data(self):
+        self.data=json.loads(open(f'{self.project_dir}/data.json', 'r').read())
+        print(self.data['users']['aman']['fav_song'])
     #def load_database()
     #def add_user(self)
     #def add_fav_song(self,user,song)
     #def add_fav_singer(self,user,)
 print("hello, world\n")
 print("The project folder is", os.getcwd())
+app = App()

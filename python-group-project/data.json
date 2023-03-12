@@ -1,0 +1,20 @@
+{
+	"users": {
+		"aman": {
+			"fav_song": "Khaab" ,
+			"fav_singer": null ,
+			"passwd": "xyz"
+		}
+	},
+	"music": {
+		"music1": {
+			"name": "some-name" ,
+			"singer": "some-singer" ,
+			"play_cnt": {
+				"aman": 32,
+				"kaif": 2,
+				"sujal": 4
+			}
+		}
+	}
+}
