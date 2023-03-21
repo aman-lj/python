@@ -156,10 +156,10 @@ class LibraryGUI:
         self.delete_transaction_button = tk.Button(self.transaction_tab, text="Delete Transaction", command=self.delete_transaction)
         self.delete_transaction_button.pack(side="left", padx=10)
 
-    def add_book(self):
+    def add_book(self, library):
         # TODO: Implement adding a book
         text = tk.Text(self.books_list)
-        text.insert("end", "Hello, World\n")
+        text.insert("end", f"{self.books[0].title}Hello, World\n")
         text.pack(side="left")
         pass
 
